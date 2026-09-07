@@ -1,0 +1,56 @@
+[
+  {
+    "id": "yellow-camo-set",
+    "model": "001",
+    "price": 20000,
+    "image": "assets/design-1.png"
+  },
+  {
+    "id": "linear-set",
+    "model": "002",
+    "price": 20000,
+    "image": "assets/design-2.png"
+  },
+  {
+    "id": "stargazer-set",
+    "model": "003",
+    "price": 26000,
+    "image": "assets/design-3.png"
+  },
+  {
+    "id": "chainlink-short-set",
+    "model": "004",
+    "price": 15000,
+    "image": "assets/design-4.png"
+  },
+  {
+    "id": "fracture-set",
+    "model": "005",
+    "price": 24000,
+    "image": "assets/design-5.png"
+  },
+  {
+    "id": "signal-set",
+    "model": "006",
+    "price": 22000,
+    "image": "assets/design-6.png"
+  },
+  {
+    "id": "scribble-set",
+    "model": "007",
+    "price": 20000,
+    "image": "assets/design-7.png"
+  },
+  {
+    "id": "impact-short-set",
+    "model": "008",
+    "price": 15000,
+    "image": "assets/design-8.png"
+  },
+  {
+    "id": "gridlock-set",
+    "model": "009",
+    "price": 20000,
+    "image": "assets/design-9.png"
+  }
+]

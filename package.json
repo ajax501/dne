@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js",
-    "check": "node --check app.js && node --check server.js",
-    "test": "node --test store.test.js",
+    "dev": "node --env-file-if-exists=.env.local dev-server.js",
+    "start": "node --env-file-if-exists=.env.local dev-server.js",
+    "check": "node --check app.js && node --check checkout-ui.js && node --check dev-server.js && node --check lib/checkout.js",
+    "test": "node --test store.test.js checkout.test.js",
     "build": "node build.js"
+  },
+  "dependencies": {
+    "stripe": "^22.6.1"
   }
 }
