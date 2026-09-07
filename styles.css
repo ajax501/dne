@@ -73,3 +73,8 @@ footer{background:transparent;color:var(--ink);text-align:center;padding:210px 2
 @media(max-width:650px){.contact-section{margin-top:100px;padding:0 35px}.contact-intro h2{font-size:18px;letter-spacing:1.5px}.contact-section .form-grid{grid-template-columns:1fr}.contact-section input,.contact-section textarea{font-size:16px}}
 .thumbs{flex-wrap:wrap}
 .thumb{flex-shrink:0}
+/* Homepage photo fades into a white base behind the brand introduction. */
+.minimal-hero{position:relative;isolation:isolate;max-width:none;width:100%;min-height:420px;margin:0;padding:90px 24px;display:grid;place-items:center;background:#fff;overflow:hidden}
+.minimal-hero::before{content:'';position:absolute;inset:0;z-index:-1;background:url('assets/hero-background.jpg') center center/cover no-repeat;opacity:.24}
+.minimal-hero p{max-width:470px;margin:0 auto;color:#20211f}
+@media(max-width:650px){.minimal-hero{min-height:350px;padding:65px 28px}.minimal-hero p{max-width:370px}}
