@@ -53,11 +53,11 @@ footer{background:transparent;color:var(--ink);text-align:center;padding:210px 2
 .footer-logo{display:inline-block}
 @media(max-width:650px){.wordmark{gap:30px}.brand-logo{width:40px}.wordmark span{font-size:18px;letter-spacing:14px}}
 @media(max-width:380px){.wordmark{gap:22px}.wordmark span{letter-spacing:10px}}
-/* Center the acronym relative to the whole header. */
-.header .wordmark{position:static}
-.header .wordmark > span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);letter-spacing:0;word-spacing:42px;white-space:nowrap}
-@media(max-width:650px){.header .wordmark > span{word-spacing:25px}}
-@media(max-width:380px){.header .wordmark > span{word-spacing:18px}}
+/* Keep the acronym beside the logo at every screen size. */
+.header .wordmark{position:static;gap:24px}
+.header .wordmark > span{position:static;transform:none;font-size:28px;letter-spacing:0;word-spacing:10px;white-space:nowrap}
+@media(max-width:650px){.header .wordmark{gap:18px}.header .wordmark > span{font-size:24px;word-spacing:7px}}
+@media(max-width:380px){.header .wordmark{gap:14px}.header .wordmark > span{font-size:22px;word-spacing:5px}}
 .contact-section{max-width:590px;margin:150px auto 0;padding:0 24px}
 .contact-intro{text-align:center;margin-bottom:38px}
 .contact-intro h2{font-size:22px;letter-spacing:2px;font-weight:400;margin:0 0 22px}
