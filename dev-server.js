@@ -18,7 +18,7 @@ http.createServer(async (req,res)=>{
       res.writeHead(response.status,Object.fromEntries(response.headers));res.end(Buffer.from(await response.arrayBuffer()));
     }catch{res.writeHead(500);res.end('API error');}return;
   }
-  if(!['/','/index.html','/app.js','/checkout-ui.js','/styles.css'].includes(pathname)&&!pathname.startsWith('/assets/')){res.writeHead(404);res.end('Not found');return;}
+  if(!['/','/index.html','/app.js','/checkout-ui.js','/contact-shader.js','/styles.css'].includes(pathname)&&!pathname.startsWith('/assets/')){res.writeHead(404);res.end('Not found');return;}
   if(pathname.includes('..')){res.writeHead(403);res.end('Forbidden');return;}
   const file=path.resolve(root,'.'+(pathname==='/'?'/index.html':pathname));
   if(!file.startsWith(root+path.sep)){res.writeHead(403);res.end('Forbidden');return;}

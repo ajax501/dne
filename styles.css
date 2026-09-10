@@ -75,6 +75,18 @@ footer{background:transparent;color:var(--ink);text-align:center;padding:210px 2
 .thumb{flex-shrink:0}
 /* Homepage photo fades into a white base behind the brand introduction. */
 .minimal-hero{position:relative;isolation:isolate;max-width:none;width:100%;min-height:420px;margin:0;padding:90px 24px;display:grid;place-items:center;background:#fff;overflow:hidden}
-.minimal-hero::before{content:'';position:absolute;inset:0;z-index:-1;background:url('assets/hero-background.jpg') center center/cover no-repeat;opacity:.24}
-.minimal-hero p{max-width:470px;margin:0 auto;color:#20211f}
+.minimal-hero::before{content:'';position:absolute;inset:0;z-index:-1;background:url('assets/hero-background.jpg') center center/cover no-repeat;opacity:.32}
+.minimal-hero p{max-width:470px;margin:0 auto;color:#000;font-weight:400}
 @media(max-width:650px){.minimal-hero{min-height:350px;padding:65px 28px}.minimal-hero p{max-width:370px}}
+/* Slow, luminous waves frame the contact form. */
+.contact-section{position:relative;isolation:isolate;max-width:none;margin:140px 0 0;padding:100px 7% 85px;background:linear-gradient(135deg,#171717,#484848);color:#fff;overflow:hidden}
+#contact-shader{position:absolute;inset:0;width:100%;height:100%;z-index:-2;pointer-events:none;opacity:0}
+.contact-section::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#00000099,#00000055);z-index:-1;pointer-events:none}
+.contact-content{max-width:1060px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}
+.contact-intro{text-align:left;margin:0}.contact-intro h2{font-size:30px;line-height:1.3;letter-spacing:2px}.contact-intro p{margin:0 0 22px;color:#eeeeee}.contact-intro .contact-motto{margin-top:28px;color:#cccccc}.contact-email{color:#fff}
+.contact-section form{background:#111111ed;padding:30px;border:1px solid #ffffff24}
+.contact-section input,.contact-section textarea{color:#fff;border-color:#ffffff45;background:#ffffff06}
+.contact-section .primary{background:#f7f7f7;color:#181818;border-color:#f7f7f7}.contact-section form>.quiet{color:#c7c7c7}
+.shader-toggle{display:block;margin:35px auto 0;padding:10px 14px;font:10px Arial,sans-serif;letter-spacing:1px;border:1px solid #ffffff50;background:#11111199;color:#eee;min-height:38px}
+.shader-toggle[hidden]{display:none}.shader-toggle:disabled{opacity:.75}
+@media(max-width:750px){.contact-section{padding:65px 24px 40px;margin-top:100px}.contact-content{grid-template-columns:1fr;gap:35px;max-width:490px}.contact-intro{text-align:center}.contact-intro h2{font-size:24px}.contact-intro p{margin-left:auto;margin-right:auto}.contact-section form{padding:24px}}
