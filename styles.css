@@ -90,3 +90,5 @@ footer{background:transparent;color:var(--ink);text-align:center;padding:210px 2
 .shader-toggle{display:block;margin:35px auto 0;padding:10px 14px;font:10px Arial,sans-serif;letter-spacing:1px;border:1px solid #ffffff50;background:#11111199;color:#eee;min-height:38px}
 .shader-toggle[hidden]{display:none}.shader-toggle:disabled{opacity:.75}
 @media(max-width:750px){.contact-section{padding:65px 24px 40px;margin-top:100px}.contact-content{grid-template-columns:1fr;gap:35px;max-width:490px}.contact-intro{text-align:center}.contact-intro h2{font-size:24px}.contact-intro p{margin-left:auto;margin-right:auto}.contact-section form{padding:24px}}
+
+.skate-film{margin:0;background:#080808;width:100%;display:flex;justify-content:center}.skate-film video{display:block;width:100%;height:min(85vh,850px);object-fit:contain;background:#080808}
