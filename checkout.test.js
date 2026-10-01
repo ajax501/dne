@@ -34,6 +34,7 @@ test('session creation includes sizes, fixed shipping, return links and stable r
   assert.equal(p.line_items[0].price_data.product_data.metadata.size,'M');
   assert.equal(p.line_items[0].price_data.product_data.name,'001');
   assert.equal(p.line_items[0].price_data.product_data.description,'Size M. Top and bottom included.');
+  assert.equal(p.line_items[0].price_data.product_data.tax_code,'txcd_99999999');
   assert.equal(p.shipping_options[0].shipping_rate_data.fixed_amount.amount,1000);
   assert.ok(p.success_url.includes('{CHECKOUT_SESSION_ID}'));
   assert.equal((await createCheckout(request(body,'https://other.example'),client,config)).status,403);
