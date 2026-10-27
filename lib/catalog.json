@@ -52,5 +52,11 @@
     "model": "009",
     "price": 20000,
     "image": "assets/design-9.png"
+  },
+  {
+    "id": "metallic-keyhole-set",
+    "model": "010",
+    "price": 15000,
+    "image": "assets/design-10.png"
   }
 ]
