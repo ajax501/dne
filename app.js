@@ -8,7 +8,9 @@ const products = [
   {id:'scribble-set',name:'SCRIBBLE SET',type:'Tracksuits',color:'Off-white / multicolor',price:200,image:'assets/design-7.png',backImage:'assets/design-7-back.png',extraViews:[{id:'jacket',label:'JACKET VIEW',image:'assets/design-7-jacket.png'}]},
   {id:'impact-short-set',name:'IMPACT SHORT SET',type:'Short sets',color:'Grey / black',price:150,image:'assets/design-8.png',backImage:'assets/design-8-back.png',extraViews:[{id:'set',label:'FULL SET',image:'assets/design-8-set.png'},{id:'neckline',label:'NECK DETAIL',image:'assets/design-8-neckline.png'}]},
   {id:'gridlock-set',name:'GRIDLOCK SET',type:'Tracksuits',color:'Black / grey',price:200,image:'assets/design-9.png',backImage:'assets/design-9-back.png',extraViews:[{id:'waistband',label:'WAIST DETAIL',image:'assets/design-9-waistband.png'},{id:'set',label:'FULL SET',image:'assets/design-9-set.png'}]},
-  {id:'metallic-keyhole-set',name:'METALLIC KEYHOLE SET',type:'Short sets',color:'Black / metallic gold and blue',price:150,image:'assets/design-10.png',backImage:'assets/design-10-back.png',extraViews:[{id:'shorts',label:'SHORTS DETAIL',image:'assets/design-10-shorts.png'},{id:'label',label:'LABEL DETAIL',image:'assets/design-10-label.png'}]}
+  {id:'metallic-keyhole-set',name:'METALLIC KEYHOLE SET',type:'Short sets',color:'Black / metallic gold and blue',price:150,image:'assets/design-10.png',backImage:'assets/design-10-back.png',extraViews:[{id:'shorts',label:'SHORTS DETAIL',image:'assets/design-10-shorts.png'},{id:'label',label:'LABEL DETAIL',image:'assets/design-10-label.png'}]},
+  {id:'icy-crystal-tracksuit',name:'ICY CRYSTAL TRACKSUIT',type:'Tracksuits',color:'Ice blue / crystal print',price:200,image:'assets/design-11.png',backImage:'assets/design-11-back.png',extraViews:[{id:'label',label:'LABEL DETAIL',image:'assets/design-11-label.png'},{id:'waistband',label:'WAIST DETAIL',image:'assets/design-11-waistband.png'}]},
+
 ];
 const money = n => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n);
 const app = document.querySelector('#app');
