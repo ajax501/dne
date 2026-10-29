@@ -64,5 +64,11 @@
     "model": "011",
     "price": 22000,
     "image": "assets/design-11.png"
+  },
+  {
+    "id": "barbed-wire-tracksuit",
+    "model": "012",
+    "price": 20000,
+    "image": "assets/design-12.png"
   }
 ]
