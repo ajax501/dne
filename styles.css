@@ -76,7 +76,7 @@ footer{background:transparent;color:var(--ink);text-align:center;padding:210px 2
 /* Homepage photo fades into a white base behind the brand introduction. */
 .minimal-hero{position:relative;isolation:isolate;max-width:none;width:100%;min-height:420px;margin:0;padding:90px 24px;display:grid;place-items:center;background:#fff;overflow:hidden}
 .minimal-hero::before{content:'';position:absolute;inset:0;z-index:-1;background:url('assets/hero-background.jpg') center center/cover no-repeat;opacity:.32}
-.minimal-hero p{max-width:520px;margin:0 auto;color:#000;font-weight:400;font-size:18px;line-height:1.75;text-shadow:0 1px 2px #000,0 0 6px #000,0 0 12px #000000cc}
+.minimal-hero p{max-width:520px;margin:0 auto;color:#000;font-family:'El Messiri',Georgia,serif;font-weight:500;font-size:18px;line-height:1.75;letter-spacing:.01em;text-shadow:0 1px 2px #fff,0 0 6px #fff,0 0 12px #ffffffcc}
 @media(max-width:650px){.minimal-hero{min-height:350px;padding:65px 28px}.minimal-hero p{max-width:370px;font-size:16px;line-height:1.75}}
 /* Slow, luminous waves frame the contact form. */
 .contact-section{position:relative;isolation:isolate;max-width:none;margin:140px 0 0;padding:100px 7% 85px;background:linear-gradient(135deg,#171717,#484848);color:#fff;overflow:hidden}
