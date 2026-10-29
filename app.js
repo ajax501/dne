@@ -1,6 +1,6 @@
 const products = [
   {id:'yellow-camo-set',name:'YELLOW CAMO SET',type:'Tracksuits',color:'Yellow / camouflage',price:200,image:'assets/design-1.png',backImage:'assets/design-1-back.png'},
-  {id:'linear-set',name:'LINEAR SET',type:'Tracksuits',color:'Black / silver',price:200,image:'assets/design-2.png',backImage:'assets/design-2-back.png'},
+  {id:'barbed-wire-tracksuit',name:'BARBED WIRE TRACKSUIT',type:'Tracksuits',color:'White / black',price:200,image:'assets/design-12.png',backImage:'assets/design-12-back.png',extraViews:[{id:'waist',label:'WAIST DETAIL',image:'assets/design-12-waist-detail.png'},{id:'zipper',label:'ZIPPER DETAIL',image:'assets/design-12-zipper-detail.png'}]},
   {id:'stargazer-set',name:'STARGAZER SET',type:'Tracksuits',color:'Black / blue',price:260,image:'assets/design-3.png',backImage:'assets/design-3-back.png',extraViews:[{id:'seated',label:'SEATED LOOK',image:'assets/design-3-seated.png'},{id:'jacket',label:'JACKET DETAIL',image:'assets/design-3-jacket.png'}]},
   {id:'chainlink-short-set',name:'CHAINLINK SHORT SET',type:'Short sets',color:'Washed grey',price:150,image:'assets/design-4.png',backImage:'assets/design-4-back.png',extraViews:[{id:'shorts',label:'SHORTS DETAIL',image:'assets/design-4-shorts.png'}]},
   {id:'fracture-set',name:'FRACTURE SET',type:'Tracksuits',color:'Charcoal / bone',price:240,image:'assets/design-5.png',backImage:'assets/design-5-back.png',extraViews:[{id:'waistband',label:'WAIST DETAIL',image:'assets/design-5-waistband.png'},{id:'set',label:'FULL SET',image:'assets/design-5-set.png'}]},
@@ -10,7 +10,7 @@ const products = [
   {id:'gridlock-set',name:'GRIDLOCK SET',type:'Tracksuits',color:'Black / grey',price:200,image:'assets/design-9.png',backImage:'assets/design-9-back.png',extraViews:[{id:'waistband',label:'WAIST DETAIL',image:'assets/design-9-waistband.png'},{id:'set',label:'FULL SET',image:'assets/design-9-set.png'}]},
   {id:'metallic-keyhole-set',name:'METALLIC KEYHOLE SET',type:'Short sets',color:'Black / metallic gold and blue',price:150,image:'assets/design-10.png',backImage:'assets/design-10-back.png',extraViews:[{id:'shorts',label:'SHORTS DETAIL',image:'assets/design-10-shorts.png'},{id:'label',label:'LABEL DETAIL',image:'assets/design-10-label.png'}]},
   {id:'icy-crystal-tracksuit',name:'ICY CRYSTAL TRACKSUIT',type:'Tracksuits',color:'Ice blue / crystal print',price:220,image:'assets/design-11.png',backImage:'assets/design-11-back.png',extraViews:[{id:'label',label:'LABEL DETAIL',image:'assets/design-11-label.png'},{id:'waistband',label:'WAIST DETAIL',image:'assets/design-11-waistband.png'}]},
-  {id:'barbed-wire-tracksuit',name:'BARBED WIRE TRACKSUIT',type:'Tracksuits',color:'White / black',price:200,image:'assets/design-12.png',backImage:'assets/design-12-back.png',extraViews:[{id:'waist',label:'WAIST DETAIL',image:'assets/design-12-waist-detail.png'},{id:'zipper',label:'ZIPPER DETAIL',image:'assets/design-12-zipper-detail.png'}]},
+  {id:'linear-set',name:'LINEAR SET',type:'Tracksuits',color:'Black / silver',price:200,image:'assets/design-2.png',backImage:'assets/design-2-back.png'},
 
 ];
 const money = n => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n);

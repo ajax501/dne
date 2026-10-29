@@ -7,7 +7,7 @@
   },
   {
     "id": "linear-set",
-    "model": "002",
+    "model": "012",
     "price": 20000,
     "image": "assets/design-2.png"
   },
@@ -67,7 +67,7 @@
   },
   {
     "id": "barbed-wire-tracksuit",
-    "model": "012",
+    "model": "002",
     "price": 20000,
     "image": "assets/design-12.png"
   }
