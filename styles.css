@@ -96,4 +96,6 @@ body{font-family:'Oswald',Arial,sans-serif}
 h1,h2,h3,h4,h5,h6,.wordmark,.footer-logo,.form-section legend,.page-title,.detail-copy h1,.summary-box h2,.empty h2,.manifesto h2,.hero-art-label strong{font-family:'El Messiri',Georgia,serif}
 .wordmark>span,.footer-logo span{font-family:inherit}
 .shader-toggle{font-family:'Oswald',Arial,sans-serif}
+.product-info{font-family:'El Messiri',Georgia,serif;font-size:18px;line-height:1.3;letter-spacing:.02em;font-weight:600;margin-top:14px}
+@media(max-width:650px){.product-info{font-size:15px}}
 
