@@ -11,6 +11,7 @@ const products = [
   {id:'metallic-keyhole-set',name:'METALLIC KEYHOLE SET',type:'Short sets',color:'Black / metallic gold and blue',price:150,image:'assets/design-10.png',backImage:'assets/design-10-back.png',extraViews:[{id:'shorts',label:'SHORTS DETAIL',image:'assets/design-10-shorts.png'},{id:'label',label:'LABEL DETAIL',image:'assets/design-10-label.png'}]},
   {id:'icy-crystal-tracksuit',name:'ICY CRYSTAL TRACKSUIT',type:'Tracksuits',color:'Ice blue / crystal print',price:220,image:'assets/design-11.png',backImage:'assets/design-11-back.png',extraViews:[{id:'label',label:'LABEL DETAIL',image:'assets/design-11-label.png'},{id:'waistband',label:'WAIST DETAIL',image:'assets/design-11-waistband.png'}]},
   {id:'linear-set',name:'LINEAR SET',type:'Tracksuits',color:'Black / silver',price:200,image:'assets/design-2.png',backImage:'assets/design-2-back.png'},
+  {id:'tactical-graphic-set',name:'TACTICAL GRAPHIC SET',type:'Tracksuits',color:'Black / silver',price:150,image:'assets/design-13.png',backImage:'assets/design-13-back.png',extraViews:[{id:'graphic',label:'GRAPHIC DETAIL',image:'assets/design-13-graphic.png'},{id:'pants',label:'PANTS DETAIL',image:'assets/design-13-pants-detail.png'}]},
 
 ];
 const money = n => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n);

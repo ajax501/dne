@@ -10,6 +10,7 @@ const items=[{id:'yellow-camo-set',size:'M',qty:2,price:1}];
 const request=(body,site=origin)=>new Request(origin+'/api/checkout',{method:'POST',headers:{'Content-Type':'application/json',origin:site},body:JSON.stringify(body)});
 test('server prices override client prices and match the storefront',()=>{
   assert.equal(validateCart(items)[0].price,20000);
+  const model013=validateCart([{id:'tactical-graphic-set',size:'M',qty:1}])[0];assert.equal(model013.model,'013');assert.equal(model013.price,15000);
   const products=vm.runInNewContext(fs.readFileSync('app.js','utf8').split('const money')[0]+'products');
   for(const p of products)assert.equal(validateCart([{id:p.id,size:'M',qty:1}])[0].price,p.price*100);
 });

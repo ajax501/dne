@@ -70,5 +70,11 @@
     "model": "002",
     "price": 20000,
     "image": "assets/design-12.png"
+  },
+  {
+    "id": "tactical-graphic-set",
+    "model": "013",
+    "price": 15000,
+    "image": "assets/design-13.png"
   }
 ]
