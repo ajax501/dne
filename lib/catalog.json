@@ -76,5 +76,11 @@
     "model": "013",
     "price": 15000,
     "image": "assets/design-13.png"
+  },
+  {
+    "id": "green-maze-short-set",
+    "model": "014",
+    "price": 15000,
+    "image": "assets/design-14.png"
   }
 ]

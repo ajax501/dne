@@ -12,6 +12,7 @@ const products = [
   {id:'icy-crystal-tracksuit',name:'ICY CRYSTAL TRACKSUIT',type:'Tracksuits',color:'Ice blue / crystal print',price:220,image:'assets/design-11.png',backImage:'assets/design-11-back.png',extraViews:[{id:'label',label:'LABEL DETAIL',image:'assets/design-11-label.png'},{id:'waistband',label:'WAIST DETAIL',image:'assets/design-11-waistband.png'}]},
   {id:'linear-set',name:'LINEAR SET',type:'Tracksuits',color:'Black / silver',price:200,image:'assets/design-2.png',backImage:'assets/design-2-back.png'},
   {id:'tactical-graphic-set',name:'TACTICAL GRAPHIC SET',type:'Tracksuits',color:'Black / silver',price:150,image:'assets/design-13.png',backImage:'assets/design-13-back.png',extraViews:[{id:'graphic',label:'GRAPHIC DETAIL',image:'assets/design-13-graphic.png'},{id:'pants',label:'PANTS DETAIL',image:'assets/design-13-pants-detail.png'}]},
+  {id:'green-maze-short-set',name:'GREEN MAZE SHORT SET',type:'Short sets',color:'Green / dark green',price:150,image:'assets/design-14.png',backImage:'assets/design-14-back.png',extraViews:[{id:'pattern',label:'PATTERN DETAIL',image:'assets/design-14-detail.png'}]},
 
 ];
 const money = n => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n);

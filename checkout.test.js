@@ -11,6 +11,7 @@ const request=(body,site=origin)=>new Request(origin+'/api/checkout',{method:'PO
 test('server prices override client prices and match the storefront',()=>{
   assert.equal(validateCart(items)[0].price,20000);
   const model013=validateCart([{id:'tactical-graphic-set',size:'M',qty:1}])[0];assert.equal(model013.model,'013');assert.equal(model013.price,15000);
+  const model014=validateCart([{id:'green-maze-short-set',size:'M',qty:1}])[0];assert.equal(model014.model,'014');assert.equal(model014.price,15000);
   const products=vm.runInNewContext(fs.readFileSync('app.js','utf8').split('const money')[0]+'products');
   for(const p of products)assert.equal(validateCart([{id:p.id,size:'M',qty:1}])[0].price,p.price*100);
 });
