@@ -6,10 +6,10 @@
     "image": "assets/design-1.png"
   },
   {
-    "id": "linear-set",
-    "model": "012",
+    "id": "barbed-wire-tracksuit",
+    "model": "002",
     "price": 20000,
-    "image": "assets/design-2.png"
+    "image": "assets/design-12.png"
   },
   {
     "id": "stargazer-set",
@@ -42,44 +42,32 @@
     "image": "assets/design-7.png"
   },
   {
-    "id": "impact-short-set",
-    "model": "008",
-    "price": 15000,
-    "image": "assets/design-8.png"
-  },
-  {
     "id": "gridlock-set",
-    "model": "009",
+    "model": "008",
     "price": 20000,
     "image": "assets/design-9.png"
   },
   {
     "id": "metallic-keyhole-set",
-    "model": "010",
+    "model": "009",
     "price": 15000,
     "image": "assets/design-10.png"
   },
   {
     "id": "icy-crystal-tracksuit",
-    "model": "011",
+    "model": "010",
     "price": 22000,
     "image": "assets/design-11.png"
   },
   {
-    "id": "barbed-wire-tracksuit",
-    "model": "002",
-    "price": 20000,
-    "image": "assets/design-12.png"
-  },
-  {
     "id": "tactical-graphic-set",
-    "model": "013",
+    "model": "011",
     "price": 15000,
     "image": "assets/design-13.png"
   },
   {
     "id": "green-maze-short-set",
-    "model": "014",
+    "model": "012",
     "price": 15000,
     "image": "assets/design-14.png"
   }

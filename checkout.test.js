@@ -10,13 +10,13 @@ const items=[{id:'yellow-camo-set',size:'M',qty:2,price:1}];
 const request=(body,site=origin)=>new Request(origin+'/api/checkout',{method:'POST',headers:{'Content-Type':'application/json',origin:site},body:JSON.stringify(body)});
 test('server prices override client prices and match the storefront',()=>{
   assert.equal(validateCart(items)[0].price,20000);
-  const model013=validateCart([{id:'tactical-graphic-set',size:'M',qty:1}])[0];assert.equal(model013.model,'013');assert.equal(model013.price,15000);
-  const model014=validateCart([{id:'green-maze-short-set',size:'M',qty:1}])[0];assert.equal(model014.model,'014');assert.equal(model014.price,15000);
+  const model011=validateCart([{id:'tactical-graphic-set',size:'M',qty:1}])[0];assert.equal(model011.model,'011');assert.equal(model011.price,15000);
+  const model012=validateCart([{id:'green-maze-short-set',size:'M',qty:1}])[0];assert.equal(model012.model,'012');assert.equal(model012.price,15000);
   const products=vm.runInNewContext(fs.readFileSync('app.js','utf8').split('const money')[0]+'products');
   for(const p of products)assert.equal(validateCart([{id:p.id,size:'M',qty:1}])[0].price,p.price*100);
 });
 test('invalid products, sizes, quantities, and duplicate overflow are rejected',()=>{
-  for(const value of [[],null,[{id:'nope',size:'M',qty:1}],[{id:items[0].id,size:'BAD',qty:1}],[{...items[0],qty:-1}],[{...items[0],qty:1.5}],[{...items[0],qty:21}],[{...items[0],qty:15},{...items[0],qty:10}]])assert.throws(()=>validateCart(value));
+  for(const value of [[],null,[{id:'nope',size:'M',qty:1}],[{id:'impact-short-set',size:'M',qty:1}],[{id:'linear-set',size:'M',qty:1}],[{id:items[0].id,size:'BAD',qty:1}],[{...items[0],qty:-1}],[{...items[0],qty:1.5}],[{...items[0],qty:21}],[{...items[0],qty:15},{...items[0],qty:10}]])assert.throws(()=>validateCart(value));
 });
 test('checkout stays closed without configuration and live approval',()=>{
   assert.throws(()=>configuration({}));
@@ -72,7 +72,7 @@ test('unconfigured deployed endpoint responds gracefully',async()=>{
 });
 test('successful browser verification subtracts only purchased items and only once',async()=>{
   const elements=new Map();const storage=new Map([['dne-pending-cs_test_123456789012',JSON.stringify([{id:'yellow-camo-set',size:'M',qty:2}])]]);
-  const context=vm.createContext({URLSearchParams,JSON,location:{hash:'#/order?session_id=cs_test_123456789012'},document:{addEventListener(){},querySelector(s){if(!elements.has(s))elements.set(s,{});return elements.get(s);}},sessionStorage:{getItem:k=>storage.get(k),removeItem:k=>storage.delete(k)},cart:[{id:'yellow-camo-set',size:'M',qty:3},{id:'linear-set',size:'S',qty:1}],saveCart(){},fetch:async()=>({ok:true,json:async()=>({paid:true,reference:'DNE-ABC'})})});
+  const context=vm.createContext({URLSearchParams,JSON,location:{hash:'#/order?session_id=cs_test_123456789012'},document:{addEventListener(){},querySelector(s){if(!elements.has(s))elements.set(s,{});return elements.get(s);}},sessionStorage:{getItem:k=>storage.get(k),removeItem:k=>storage.delete(k)},cart:[{id:'yellow-camo-set',size:'M',qty:3},{id:'gridlock-set',size:'S',qty:1}],saveCart(){},fetch:async()=>({ok:true,json:async()=>({paid:true,reference:'DNE-ABC'})})});
   vm.runInContext(fs.readFileSync('checkout-ui.js','utf8'),context);
   await vm.runInContext('verifyOrder()',context);await vm.runInContext('verifyOrder()',context);
   assert.equal(context.cart[0].qty,1);assert.equal(context.cart[1].qty,1);assert.equal(storage.size,0);
